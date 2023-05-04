@@ -14,8 +14,10 @@ export class SightingsService {
       Authorization: token
     });
     return this.http.get(
-      'https://8ua63uneed.execute-api.eu-west-1.amazonaws.com/dev/sightings',
+      // 'https://8ua63uneed.execute-api.eu-west-1.amazonaws.com/dev/sightings',
+      'https://8ua63uneed.execute-api.eu-west-1.amazonaws.com/staging/sightings',
       { headers: header}
     );
   }
 }
+
